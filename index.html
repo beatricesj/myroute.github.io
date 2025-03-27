@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>MyRoute</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css"> 
+	*{padding: 0; margin: 0; box-sizing: border-box;}
+	header{
+		width: 100%;
+		height: 100vh;
+		background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), 
+					url('https://images.pexels.com/photos/219998/pexels-photo-219998.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+		background-size: cover;
+		font-family: sans-serif;
+	}
+
+	nav{ 
+		height: 100px;
+		color: #ffffff;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		word-spacing: 50px;
+	}
+	.logo{
+		font-size: 2em;
+		letter-spacing: 2px;
+	}
+	.menu a{ 
+		text-decoration: none;
+		color: #ffffff;
+		padding: 10 px 20px;
+		font-size: 20px;
+		position: relative;
+	}
+	.menu a:before{
+		content: '';
+		position: absolute;
+		top:0;
+		left: 0;
+		width: 0%; 
+		height: 100%;
+		border-bottom: 2px solid #013a63;
+		transition: 0.4s linear;
+	}
+	.menu a:hover:before{
+		width: 90%;
+	} 
+	.register a{ 
+		text-decoration: none;
+		color: #ffffff;
+		padding: 10px 15px;
+		font-size: 20px;
+		border-radius: 10px;
+		background: #013a63;
+		transition: 0.4s;
+	}
+	.register a:hover{
+		background: transparent;
+		border: 1px solid #013a63;
+	}
+	.h-txt{
+		max-width: 650px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		color: #ffffff;
+	}
+	.h-txt span{
+		letter-spacing: 5px;
+	} 
+	.h-txt h1{
+		font-size: 3.5em;
+	}
+	.h-txt a{
+		text-decoration: none;
+		color: #ffffff;
+		padding: 10px 20px;
+		font-size: 20px;
+		border-radius: 10px;
+		background: #013a63;
+		transition: 0.4s;
+	}
+	.h-txt a:hover{
+		background: transparent;
+		border: 1px solid #013a63;
+	}
+</style>
+</head>
+<body>
+<header>
+	<nav> 
+		<div class="logo">
+			MyRoute 
+		</div>
+		<div class="menu">
+			<a href="#">Home</a>
+			<a href="#">Offers</a>
+			<a href="#">Contact</a>
+		</div>
+		<div class="register">
+			<a href="#">Register</a>
+		</div>
+	</nav> 
+	<section class="h-txt">
+		<span>The Itinerary You Design</span>
+		<h1> Your Organized Travel Experience.</h1>
+
+		<br>
+		<a href="#">Get Started</a>
+	</section>
+</header>
+	<div class="w3-container" style="padding: 128px 16px;" id="about">
+	<h3 class="w3-center" style="font-size: 2.5em; align-items: center; text-align: center;">ABOUT MYROUTE</h3>
+	<p class="w3-center w3-large" style="font-size: 1.75em; align-items: center; text-align: center;">Key features of our company</p>
+	<div class="w3-row-padding" style="margin-top: 64px; display: flex; justify-content: center;">
+	  <div class="w3-quarter" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+		<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-display" viewBox="0 0 16 16">
+		  <path d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4q0 1 .25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75Q6 13 6 12H2s-2 0-2-2zm1.398-.855a.76.76 0 0 0-.254.302A1.5 1.5 0 0 0 1 4.01V10c0 .325.078.502.145.602q.105.156.302.254a1.5 1.5 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.76.76 0 0 0 .254-.302 1.5 1.5 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.76.76 0 0 0-.302-.254A1.5 1.5 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145"/>
+		</svg>
+		<p class="w3-xxlarge" style="font-size: 2em;">Responsive</p>
+		<p>MyRoute prioritizes responsive communication and flexible itinerary adjustments. We're here to adapt to your needs, ensuring a seamless and stress-free experience from start to finish.</p>
+	  </div>
+	  <div class="w3-quarter" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+		<i class="fa fa-heart w3-margin-bottom" style="font-size: 48px;"></i>
+		<p class="w3-xxlarge" style="font-size: 2em;">Passion</p>
+		<p>MyRoute was born from a deep passion for authentic and personalized travel. We believe every journey should be unique, reflecting the individual's spirit of adventure. Our team's enthusiasm for exploration fuels our commitment to crafting unforgettable experiences.</p>
+	  </div>
+	  <div class="w3-quarter" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+		<i class="fa fa-diamond w3-margin-bottom" style="font-size: 48px;"></i>
+		<p class="w3-xxlarge" style="font-size: 2em;">Design</p>
+		<p>We don't just plan trips; we design bespoke travel narratives. MyRoute meticulously crafts itineraries, blending insider knowledge with creative planning. We focus on details, from hidden gems to seamless logistics, to create journeys that resonate.</p>
+	  </div>
+	  <div class="w3-quarter" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+		<i class="fa fa-cog w3-margin-bottom" style="font-size: 48px;"></i>
+		<p class="w3-xxlarge" style="font-size: 2em;">Support</p>
+		<p>Your peace of mind is our priority. MyRoute provides comprehensive support throughout your journey. From initial planning to on-the-go assistance, we're here to guide you. We handle the complexities, so you can focus on creating lasting memories.</p>
+	  </div>
+	</div>
+  </div>
+</body>
